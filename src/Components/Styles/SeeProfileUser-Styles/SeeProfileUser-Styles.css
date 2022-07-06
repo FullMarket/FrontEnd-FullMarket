@@ -1,0 +1,74 @@
+.cont-userProfile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    background-image: url("../../../../public/Img/bg1-navbar.svg");
+    border-top: #f6560a 2px solid;
+}
+
+.Container-DataUser{
+    background-image: url("../../../../public/Img/bgcards2.svg");
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    padding: 0px;
+    box-shadow: 1px 4px 8px 0 #000000;
+}
+
+.imgCardProfileUserSee{
+    width: 40%;
+    box-shadow:  2px 2px 4px 0 #ffffff;
+}
+
+.textProfileUserSee{
+    font-size: 15px;
+    margin: 10px;
+    color: #000000;
+}
+
+.textProfileUserSees{
+    font-size: 30px;
+    color: #000000;
+    font-family: "Bebas Neue", cursive;
+    margin-top: 5%;
+}
+
+@media (max-width: 768px) {
+    .Container-DataUser{
+        width: 50%;
+    }
+
+    .imgCardProfileUserSee{
+        width: 50%;
+    }
+
+    .textProfileUserSee{
+        font-size: 0.9rem;
+    }
+    
+    .textProfileUserSees{
+        font-size: 25px;
+        margin: 15px;
+    }
+}
+
+@media (max-width: 520px) {
+    .Container-DataUser{
+        width: 80%;
+    }
+
+    .imgCardProfileUserSee{
+        width: 50%;
+    }
+
+    .textProfileUserSee{
+        font-size: 0.9rem;
+    }
+
+    .textProfileUserSees{
+        font-size: 25px;
+        margin: 15px;
+    }
+}

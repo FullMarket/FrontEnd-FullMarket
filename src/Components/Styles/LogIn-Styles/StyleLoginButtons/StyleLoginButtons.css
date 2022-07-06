@@ -1,0 +1,161 @@
+
+p.msg-Alert {
+  color: #ff5100;
+  transition: .3s;
+}
+
+p.msg-Alert:hover {
+  transition: 3s;
+}
+
+.login-content {
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  position: absolute;
+  width: 34%;
+  right: 14rem;
+  top: 18rem;
+}
+
+.form input {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  border-radius: 7px;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+div.formulari {
+  width: 30rem;
+  position: absolute;
+  margin-top: 10rem;
+  left: 65rem;
+}
+
+div.Line-hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.login-content h2 {
+  margin: 55px 0;
+  color: #333;
+  font-size: 2.0rem;
+}
+
+.login-content .input-div {
+  position: relative;
+  display: grid;
+  grid-template-columns: 7% 93%;
+  margin: 25px 0;
+  padding: 5px 0;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.input-div>div {
+  position: relative;
+  height: 45px;
+}
+
+a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #f6560a;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 0.9rem;
+  align-self: center;
+}
+
+a:hover {
+  color: #ff661f;
+}
+
+
+/* ANIMACION BOTONES LOGIN */
+.btn-Applylog {
+  --color: #ff661f;
+  background: linear-gradient(#f6560a,#f6560a);
+  width: 12rem;
+  height: 2.5rem;
+  border-radius: 1rem;
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #f6560a;
+  transition: color .5s;
+  z-index: 1;
+  font-size: 1rem;
+  color: #ffff;
+  cursor: pointer;
+  
+}
+
+.btn-Applylog:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 200px;
+  width: 480px;
+  border-radius: 50%;
+}
+
+.btn-Applylog:before {
+  top: 100%;
+  left: 100%;
+  transition: all 2s;
+ }
+
+ .btn-Applylog:hover:before {
+  top: -45px;
+  left: -34px;
+}
+
+ .btn-Applylog:hover{
+  background:linear-gradient(#000000, #000000) ;
+  animation: slidebg 2s linear infinite;
+  border: 0px solid #000000;
+  color: #FFFF;
+}
+/* ///////// */
+
+@media (max-width: 1200px) {
+  .login-content {
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    position: absolute;
+    width: 40%;
+    right: 8rem;
+    top: 18rem;
+  }
+}
+@media (max-width: 768px) {
+  .login-content {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    width: 90%;
+    right: 0rem;
+    top: 0rem;
+  }  
+}

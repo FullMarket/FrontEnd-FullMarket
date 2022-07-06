@@ -1,0 +1,41 @@
+.ContainerChats{
+    margin: 10px;
+    background-image: url("../../../../public/Img/bg1-navbar.svg");
+    width: 50%;
+}
+.btn-GoChat{
+    background-color: #f6560a;
+    border-radius: 1rem;
+    border: #f6560a;
+    width: 20%;
+    height: 2.5rem;
+}
+
+.btn-GoChat:hover{
+    background-color: #ff661f;
+    
+}
+
+.ContainerChats p {
+    color: white;
+}
+
+.ContainerNotificationsChat{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../../../../public/Img/bg1.svg");
+}
+
+@media (max-width: 768px) {
+    .ContainerChats{
+        width: 90%;
+    }
+}
+
+@media (max-width: 520px) {
+    .ContainerChats{
+        width: 95%;
+    }
+}
